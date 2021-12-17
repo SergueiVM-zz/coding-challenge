@@ -1,0 +1,87 @@
+2021-12-17 10:25:48,580 WARN  [HikariPool-1 housekeeper] HikariPool: HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=13h3m34s262ms248µs500ns).
+2021-12-17 13:45:33,707 INFO  [restartedMain] PokerApplication: Starting PokerApplication using Java 17.0.1 on LIN41007182 with PID 24496 (C:\Users\sarmsark\Documents\Interview\poker\target\classes started by sarmsark in C:\Users\sarmsark\Documents\Interview\poker)
+2021-12-17 13:45:33,710 INFO  [restartedMain] PokerApplication: No active profile set, falling back to default profiles: default
+2021-12-17 13:45:33,762 INFO  [restartedMain] DevToolsPropertyDefaultsPostProcessor: Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-12-17 13:45:33,764 INFO  [restartedMain] DevToolsPropertyDefaultsPostProcessor: For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-12-17 13:45:34,637 INFO  [restartedMain] RepositoryConfigurationDelegate: Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-17 13:45:34,704 INFO  [restartedMain] RepositoryConfigurationDelegate: Finished Spring Data repository scanning in 56 ms. Found 5 JPA repository interfaces.
+2021-12-17 13:45:35,546 INFO  [restartedMain] TomcatWebServer: Tomcat initialized with port(s): 8080 (http)
+2021-12-17 13:45:35,566 INFO  [restartedMain] Http11NioProtocol: Initializing ProtocolHandler ["http-nio-8080"]
+2021-12-17 13:45:35,567 INFO  [restartedMain] StandardService: Starting service [Tomcat]
+2021-12-17 13:45:35,567 INFO  [restartedMain] StandardEngine: Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-12-17 13:45:35,660 INFO  [restartedMain] [/planningPoker]: Initializing Spring embedded WebApplicationContext
+2021-12-17 13:45:35,661 INFO  [restartedMain] ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 1896 ms
+2021-12-17 13:45:35,698 INFO  [restartedMain] HikariDataSource: HikariPool-1 - Starting...
+2021-12-17 13:45:35,911 INFO  [restartedMain] HikariDataSource: HikariPool-1 - Start completed.
+2021-12-17 13:45:35,923 INFO  [restartedMain] H2ConsoleAutoConfiguration: H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2021-12-17 13:45:36,134 INFO  [restartedMain] LogHelper: HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-17 13:45:36,193 INFO  [restartedMain] Version: HHH000412: Hibernate ORM core version 5.6.1.Final
+2021-12-17 13:45:36,383 INFO  [restartedMain] Version: HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-17 13:45:36,485 INFO  [restartedMain] Dialect: HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-12-17 13:45:37,199 INFO  [restartedMain] JtaPlatformInitiator: HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-17 13:45:37,207 INFO  [restartedMain] LocalContainerEntityManagerFactoryBean: Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-17 13:45:37,954 WARN  [restartedMain] JpaBaseConfiguration$JpaWebConfiguration: spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-17 13:45:38,147 INFO  [restartedMain] PropertySourcedRequestMappingHandlerMapping: Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-12-17 13:45:38,289 INFO  [restartedMain] OptionalLiveReloadServer: LiveReload server is running on port 35729
+2021-12-17 13:45:38,485 INFO  [restartedMain] Http11NioProtocol: Starting ProtocolHandler ["http-nio-8080"]
+2021-12-17 13:45:38,535 INFO  [restartedMain] TomcatWebServer: Tomcat started on port(s): 8080 (http) with context path '/planningPoker'
+2021-12-17 13:45:38,536 INFO  [restartedMain] DocumentationPluginsBootstrapper: Context refreshed
+2021-12-17 13:45:38,560 INFO  [restartedMain] DocumentationPluginsBootstrapper: Found 1 custom documentation plugin(s)
+2021-12-17 13:45:38,562 WARN  [restartedMain] AnnotationConfigServletWebServerApplicationContext: Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NullPointerException: Cannot invoke "org.springframework.web.servlet.mvc.condition.PatternsRequestCondition.toString()" because the return value of "springfox.documentation.spi.service.contexts.Orderings.patternsCondition(springfox.documentation.RequestHandler)" is null
+2021-12-17 13:45:38,568 INFO  [restartedMain] LocalContainerEntityManagerFactoryBean: Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-17 13:45:38,569 INFO  [restartedMain] SchemaDropperImpl$DelayedDropActionImpl: HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-12-17 13:45:38,803 WARN  [restartedMain] DisposableBeanAdapter: Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2021-12-17 13:45:38,804 INFO  [restartedMain] HikariDataSource: HikariPool-1 - Shutdown initiated...
+2021-12-17 13:45:38,808 INFO  [restartedMain] HikariDataSource: HikariPool-1 - Shutdown completed.
+2021-12-17 13:45:38,825 INFO  [restartedMain] Http11NioProtocol: Pausing ProtocolHandler ["http-nio-8080"]
+2021-12-17 13:45:38,826 INFO  [restartedMain] StandardService: Stopping service [Tomcat]
+2021-12-17 13:45:38,830 INFO  [restartedMain] Http11NioProtocol: Stopping ProtocolHandler ["http-nio-8080"]
+2021-12-17 13:45:38,831 INFO  [restartedMain] Http11NioProtocol: Destroying ProtocolHandler ["http-nio-8080"]
+2021-12-17 13:45:38,839 INFO  [restartedMain] ConditionEvaluationReportLoggingListener: 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-12-17 13:45:38,872 ERROR [restartedMain] SpringApplication: Application run failed
+org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NullPointerException: Cannot invoke "org.springframework.web.servlet.mvc.condition.PatternsRequestCondition.toString()" because the return value of "springfox.documentation.spi.service.contexts.Orderings.patternsCondition(springfox.documentation.RequestHandler)" is null
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:181)
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54)
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155)
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:935)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290)
+	at com.planning.poker.PokerApplication.main(PokerApplication.java:17)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.NullPointerException: Cannot invoke "org.springframework.web.servlet.mvc.condition.PatternsRequestCondition.toString()" because the return value of "springfox.documentation.spi.service.contexts.Orderings.patternsCondition(springfox.documentation.RequestHandler)" is null
+	at springfox.documentation.spi.service.contexts.Orderings$8.compare(Orderings.java:113)
+	at springfox.documentation.spi.service.contexts.Orderings$8.compare(Orderings.java:110)
+	at com.google.common.collect.ComparatorOrdering.compare(ComparatorOrdering.java:38)
+	at java.base/java.util.TimSort.countRunAndMakeAscending(TimSort.java:355)
+	at java.base/java.util.TimSort.sort(TimSort.java:220)
+	at java.base/java.util.Arrays.sort(Arrays.java:1233)
+	at com.google.common.collect.Ordering.sortedCopy(Ordering.java:817)
+	at springfox.documentation.spring.web.plugins.WebMvcRequestHandlerProvider.requestHandlers(WebMvcRequestHandlerProvider.java:52)
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper$2.apply(DocumentationPluginsBootstrapper.java:129)
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper$2.apply(DocumentationPluginsBootstrapper.java:126)
+	at com.google.common.collect.Iterators$8.transform(Iterators.java:799)
+	at com.google.common.collect.TransformedIterator.next(TransformedIterator.java:48)
+	at com.google.common.collect.TransformedIterator.next(TransformedIterator.java:48)
+	at com.google.common.collect.Iterators$5.hasNext(Iterators.java:548)
+	at com.google.common.collect.ImmutableList.copyOf(ImmutableList.java:268)
+	at com.google.common.collect.ImmutableList.copyOf(ImmutableList.java:226)
+	at com.google.common.collect.FluentIterable.toList(FluentIterable.java:373)
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.defaultContextBuilder(DocumentationPluginsBootstrapper.java:100)
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.buildContext(DocumentationPluginsBootstrapper.java:91)
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:154)
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178)
+	... 19 common frames omitted
