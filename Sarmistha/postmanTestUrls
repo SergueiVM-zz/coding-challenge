@@ -1,0 +1,76 @@
+1.logically session should have create once. I am creating the session
+POST
+http://localhost:8080/planningPoker/poker/createPockerPlanningSession?title=Planning Poker&deckType=deck1&memberName=Sarmistha
+
+2.note the session value and replace all places
+POST
+http://localhost:8080/planningPoker/poker/addUpdateMemberList?session=11344&memberName=Ann
+
+3.add user story to particular session
+POST
+http://localhost:8080/planningPoker/userstory/addUserStory?uStoryId=Id1&description=create a new user story&session=11344
+http://localhost:8080/planningPoker/userstory/addUserStory?uStoryId=Id2&description=create second new user story&session=11344
+
+4.member voted for particular story
+POST
+http://localhost:8080/planningPoker/voting/submitUserStoryVote?uStoryId=Id1&memberId=1&session=11344&votePoint=3
+
+
+Stop User Story Voting
+POST
+http://localhost:8080/planningPoker/voting/stopuserStoryVoting?uStoryId=Id1
+
+
+5.After Moving the status to VOTED show final result (maximum value of votePoint entered by members for a particular story) 
+GET
+http://localhost:8080/planningPoker/voting/fetchVoteFinalResultForUserStory?uStoryId=Id1&session=11344
+
+
+
+For vote not allow scenario testing
+POST
+http://localhost:8080/planningPoker/voting/submitUserStoryVote?uStoryId=Id1&memberId=1&session=11344
+
+
+
+6.show title of the session
+GET
+http://localhost:8080/planningPoker/poker/getTitleOfTheSession?session=11344
+
+7.fetch poker session by session
+http://localhost:8080/planningPoker/poker/getPokerSessionBySession?session=11344
+
+
+8.fetch user stories for a session
+http://localhost:8080/planningPoker/poker/getUserStoryListOfTheSession?session=11344
+
+
+9.fetch member list for a session
+http://localhost:8080/planningPoker/poker/getMemberListOfTheSession?session=11344
+
+10.fetch all poker session
+http://localhost:8080/planningPoker/poker/getAllPokerSession
+
+
+11.get a userstory
+http://localhost:8080/planningPoker/userstory/getUserStory?uStoryId=Id1
+
+
+12.delete a userstory
+http://localhost:8080/planningPoker/userstory/deleteUserStory?uStoryId=Id1
+
+13.destroy pokersession
+http://localhost:8080/planningPoker/poker/destroyPokerSession?session=11344
+
+
+
+
+https://github.com/SergueiVM/coding-challenge
+
+
+
+https://github.com/sarmisthaCG/coding-challenge.git
+
+
+
+
