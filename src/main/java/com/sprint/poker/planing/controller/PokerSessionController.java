@@ -14,14 +14,14 @@ import java.util.List;
 @RestController
 @RequestMapping(value = {"/api/poker"})
 public class PokerSessionController {
-
+ 
     private static final Logger LOGGER = LoggerFactory.getLogger(PokerSessionController.class);
 
     @Autowired
     private PokerSessionService pokerSessionService;
 
     /**
-     * post resource for new session
+     * post resource for new session object
      * data mapped to session and member table
      *
      * @param pokerSession
